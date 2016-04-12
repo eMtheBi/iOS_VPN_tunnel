@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>IPSec</key>
+				<dict>
+					<key>AuthenticationMethod</key>
+					<string>SharedSecret</string>
+					<key>OnDemandEnabled</key>
+					<integer>1</integer>
+					<key>OnDemandRules</key>
+					<array>
+						<dict>
+							<key>Action</key>
+							<string>Disconnect</string>
+							<key>InterfaceTypeMatch</key>
+							<string>WiFi</string>
+							<key>SSIDMatch</key>
+							<array>
+								<string>REPLACE_WITH_TRUSTED_WIFI_SSID</string>
+								<string>REPLACE_WITH_ANOTHER_TRUSTED_WIFI_SSID</string>
+							</array>
+						</dict>
+						<dict>
+							<key>Action</key>
+							<string>Connect</string>
+							<key>InterfaceTypeMatch</key>
+							<string>WiFi</string>
+						</dict>
+						<dict>
+							<key>Action</key>
+							<string>Connect</string>
+							<key>InterfaceTypeMatch</key>
+							<string>Cellular</string>
+						</dict>
+					</array>
+					<key>LocalIdentifier</key>
+					<string>REPLACE_VPN_LOGIN</string>
+					<key>LocalIdentifierType</key>
+					<string>KeyID</string>
+					<key>RemoteAddress</key>
+					<!--  e.g. replace with abcdxyz.myfritz.net -->
+					<string>REPLACE_VPN_HOST</string>
+					<key>SharedSecret</key>
+					<string>REPLACE_SHARED_SECRET</string>
+					<key>XAuthEnabled</key>
+					<integer>1</integer>
+					<key>XAuthName</key>
+					<string>REPLACE_VPN_LOGIN</string>
+					<key>XAuthPassword</key>
+					<string>REPLACE_VPN_PASSWORD</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Configures VPN settings for untrusted Networks </string>
+				<key>PayloadDisplayName</key>
+				<string>VPN tunnel for untrusted Networks</string>
+				<key>PayloadIdentifier</key>
+				<string>REPLACE_VPN_HOST</string>
+				<key>PayloadType</key>
+				<string>com.apple.vpn.managed</string>
+				<key>PayloadUUID</key>
+				<string>REPLACE_VPN_HOST</string>
+				<key>PayloadVersion</key>
+				<real>1</real>
+				<key>UserDefinedName</key>
+				<string>VPN OnDemand</string>
+				<key>VPNType</key>
+				<string>IPSec</string>
+			</dict>
+		</array>
+		<key>PayloadDisplayName</key>
+		<string>VPN OnDemand</string>
+		<key>PayloadIdentifier</key>
+		<string>REPLACE_VPN_HOST</string>
+		<key>PayloadRemovalDisallowed</key>
+		<false />
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>REPLACE_VPN_HOST</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
