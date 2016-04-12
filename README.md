@@ -13,7 +13,7 @@ https://help.apple.com/deployment/ios/#/ior69b9b7600
 Replace
 REPLACE_WITH_TRUSTED_WIFI_SSID
 REPLACE_WITH_ANOTHER_TRUSTED_WIFI_SSID
-with SSID of truted WiFi Ids
+with SSID of trusted WiFi Ids
 
 Replace
 REPLACE_VPN_LOGIN
